@@ -35,15 +35,15 @@ git clone https://github.com/uoip/pangolin.git
 cd pangolin
 mkdir build
 cd build
-cmake ..
+cmake -DBUILD_PANGOLIN_LIBOPENEXR=OFF -DBUILD_PANGOLIN_FFMPEG=OFF -DBUILD_PANGOLIN_PYTHON=ON -DBUILD_PANGOLIN_GUI=ON -DBUILD_PANGOLIN_VARS=ON -DCMAKE_BUILD_TYPE=Debug -DPYTHON_EXECUTABLE=`which python3.7` ..
 make -j8
 cd ..
-python setup.py install
+python3.7 setup.py install
 ```
-Tested under Ubuntu 16.04, Python 3.6+.
+Tested under MacOS Monterey, Python 3.6+.
 
 ## Getting started
-The code below create a window, and render a cube and a cloud of points.
+The code below create a window, and render a cube and a cloud of points. (PYTHON BINDINGS DONT WORK YET!)
 ```python
 import numpy as np
 import OpenGL.GL as gl
