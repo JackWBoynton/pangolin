@@ -43,6 +43,6 @@
             }
         }
     #else
-        #include <GL/freeglut.h>
+        #include </usr/local/include/gl/freeglut.h>
     #endif // HAVE_APPLE_OPENGL_FRAMEWORK
 #endif // HAVE_GLUT

@@ -56,7 +56,7 @@
 #endif
 
 #ifdef HAVE_GLEW
-    #include <GL/glew.h>
+    #include </usr/local/include/gl/glew.h>
 #endif
 
 #ifdef HAVE_GLES
@@ -78,7 +78,7 @@
     #ifdef _OSX_
         #include <OpenGL/gl.h>
     #else
-        #include <GL/gl.h>
+        #include </usr/local/include/gl/gl.h>
     #endif
 #endif // HAVE_GLES
 

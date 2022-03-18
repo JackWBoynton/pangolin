@@ -98,27 +98,31 @@ struct PANGOLIN_EXPORT PangolinGl : public WindowInterface
 
     std::shared_ptr<GlFont> font;
 
-    virtual void ToggleFullscreen() override {
+    virtual void ToggleFullscreen()  {
         pango_print_warn("ToggleFullscreen: Not available with non-pangolin window.\n");
     }
 
-    virtual void ProcessEvents() override {
+    virtual void ProcessEvents()  {
         pango_print_warn("ProcessEvents: Not available with non-pangolin window.\n");
     }
 
-    virtual void SwapBuffers() override {
+    virtual void SwapBuffers()  {
         pango_print_warn("SwapBuffers: Not available with non-pangolin window.\n");
     }
 
-    virtual void MakeCurrent() override {
+    virtual void MakeCurrent()  {
         pango_print_warn("MakeCurrent: Not available with non-pangolin window.\n");
     }
 
-    virtual void Move(int /*x*/, int /*y*/) override {
+    virtual void RemoveCurrent()  {
+        pango_print_warn("RemoveCurrent: Not available with non-pangolin window.\n");
+    }
+
+    virtual void Move(int /*x*/, int /*y*/)  {
         pango_print_warn("Move: Not available with non-pangolin window.\n");
     }
 
-    virtual void Resize(unsigned int /*w*/, unsigned int /*h*/) override {
+    virtual void Resize(unsigned int /*w*/, unsigned int /*h*/)  {
         pango_print_warn("Resize: Not available with non-pangolin window.\n");
     }
 
@@ -126,7 +130,7 @@ struct PANGOLIN_EXPORT PangolinGl : public WindowInterface
 };
 
 PangolinGl* GetCurrentContext();
-void AddNewContext(const std::string& name, std::shared_ptr<PangolinGl> newcontext);
+void RegisterNewContext(const std::string& name, std::shared_ptr<PangolinGl> newcontext);
 void DeleteContext(const std::string& name);
 PangolinGl *FindContext(const std::string& name);
 

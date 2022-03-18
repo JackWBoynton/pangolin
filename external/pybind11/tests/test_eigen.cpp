@@ -11,7 +11,7 @@
 #include "constructor_stats.h"
 #include <pybind11/eigen.h>
 #include <pybind11/stl.h>
-#include <Eigen/Cholesky>
+#include </usr/local/include/eigen3/Eigen/Cholesky>
 
 using MatrixXdR = Eigen::Matrix<double, Eigen::Dynamic, Eigen::Dynamic, Eigen::RowMajor>;
 

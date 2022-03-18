@@ -180,6 +180,9 @@ public:
     void ClearImplicitPlots();
     void AddImplicitPlot();
 
+    /// Reset colour wheel to initial state. May be useful together with ClearSeries() / ClearMarkers()
+    void ResetColourWheel();
+
 protected:
     struct PANGOLIN_EXPORT Tick
     {
@@ -277,3 +280,4 @@ protected:
 } // namespace pangolin
 
 #endif // PLOTTER_H
+

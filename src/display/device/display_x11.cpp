@@ -45,7 +45,7 @@
 #include <string.h>
 #include <unistd.h>
 
-#include <GL/glx.h>
+#include </usr/local/include/gl/glx.h>
 
 namespace pangolin
 {

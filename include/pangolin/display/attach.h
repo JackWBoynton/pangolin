@@ -30,7 +30,7 @@
 #include <iostream>
 #include <string>
 #include <cmath>
-#include <GL/glew.h>
+#include </usr/local/include/gl/glew.h>
 
 namespace pangolin
 {

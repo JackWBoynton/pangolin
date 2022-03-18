@@ -8,7 +8,7 @@
 #include <pangolin/scene/interactive_index.h>
 
 #ifdef HAVE_EIGEN
-#  include <Eigen/Geometry>
+#  include </usr/local/include/eigen3/Eigen/Geometry>
 #endif
 
 namespace pangolin {

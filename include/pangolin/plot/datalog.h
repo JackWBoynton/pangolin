@@ -42,7 +42,7 @@
 #endif
 
 #ifdef USE_EIGEN
-#include <Eigen/Core>
+#include </usr/local/include/eigen3/Eigen/Core>
 #endif
 
 namespace pangolin

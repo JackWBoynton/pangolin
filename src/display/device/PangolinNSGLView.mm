@@ -5,6 +5,15 @@
 #include <pangolin/display/display_internal.h>
 #include <pangolin/handler/handler_enums.h>
 
+#if MAC_OS_X_VERSION_MAX_ALLOWED >= 101200
+#  define NSDeviceIndependentModifierFlagsMask NSEventModifierFlagDeviceIndependentFlagsMask
+#  define  NSShiftKeyMask NSEventModifierFlagShift
+#  define  NSControlKeyMask NSEventModifierFlagControl
+#  define  NSAlternateKeyMask NSEventModifierFlagOption
+#  define  NSCommandKeyMask NSEventModifierFlagCommand
+#  define  NSFunctionKeyMask NSEventModifierFlagFunction
+#endif
+
 namespace pangolin
 {
 extern __thread PangolinGl* context;
@@ -72,8 +81,8 @@ int mapKeymap(int osx_key)
 -(void)reshape
 {
 #if MAC_OS_X_VERSION_MAX_ALLOWED >= MAC_OS_X_VERSION_10_7
-    if ( [self wantsBestResolutionOpenGLSurface] && [ _window respondsToSelector:@selector(backingScaleFactor) ] )
-        backing_scale = [_window backingScaleFactor];
+    if ( [self wantsBestResolutionOpenGLSurface] && [ self.window respondsToSelector:@selector(backingScaleFactor) ] )
+        backing_scale = [self.window backingScaleFactor];
     else
 #endif
         backing_scale = 1.0;

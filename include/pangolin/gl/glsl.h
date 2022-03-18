@@ -48,7 +48,7 @@
 #endif
 
 #ifdef USE_EIGEN
-#include <Eigen/Core>
+#include </usr/local/include/eigen3/Eigen/Core>
 #endif // USE_EIGEN
 
 namespace pangolin
@@ -274,7 +274,7 @@ inline bool IsLinkSuccessPrintLog(GLhandleARB prog)
     return true;
 }
 
-inline bool IsCompileSuccessPrintLog(GLhandleARB shader, const std::string& name_for_errors)
+inline bool IsCompileSuccessPrintLog(GLhandleARB shader, const std::string& name_for_errors, const std::string& source_code = {})
 {
     GLint status;
     glGetShaderiv(shader, GL_COMPILE_STATUS, &status);
@@ -288,6 +288,10 @@ inline bool IsCompileSuccessPrintLog(GLhandleARB shader, const std::string& name
             pango_print_error("%s:\n%s\n",name_for_errors.c_str(), infolog);
         }else{
             pango_print_error("%s:\nNo details provided.\n",name_for_errors.c_str());
+        }
+        if(!source_code.empty())
+        {
+            pango_print_error("In source code:\n%s\n",source_code.c_str());
         }
         return false;
     }
@@ -331,7 +335,7 @@ inline bool GlSlProgram::AddPreprocessedShader(
     const char* source = source_code.c_str();
     glShaderSource(shader, 1, &source, NULL);
     glCompileShader(shader);
-    bool success = IsCompileSuccessPrintLog(shader, name_for_errors);
+    bool success = IsCompileSuccessPrintLog(shader, name_for_errors, source_code);
     if(success) {
         glAttachShader(prog, shader);
         shaders.push_back(shader);

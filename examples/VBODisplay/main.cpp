@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include <GL/glew.h>
+#include </usr/local/include/gl/glew.h>
 
 #include <pangolin/pangolin.h>
 #include <pangolin/gl/glcuda.h>
