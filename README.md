@@ -43,7 +43,7 @@ python3.7 setup.py install
 Tested under MacOS Monterey, Python 3.6+.
 
 ## Getting started
-The code below create a window, and render a cube and a cloud of points. (PYTHON BINDINGS DONT WORK YET!)
+The code below create a window, and render a cube and a cloud of points.
 ```python
 import numpy as np
 import OpenGL.GL as gl
