@@ -94,7 +94,7 @@ examples/SimpleDisplayImage/SimpleDisplayImage: examples/SimpleDisplayImage/CMak
 examples/SimpleDisplayImage/SimpleDisplayImage: examples/SimpleDisplayImage/CMakeFiles/SimpleDisplayImage.dir/build.make
 examples/SimpleDisplayImage/SimpleDisplayImage: src/lib_pangolin.a
 examples/SimpleDisplayImage/SimpleDisplayImage: /usr/local/lib/libGLEW.dylib
-examples/SimpleDisplayImage/SimpleDisplayImage: /Library/Frameworks/Python.framework/Versions/3.9/lib/libpython3.9.dylib
+examples/SimpleDisplayImage/SimpleDisplayImage: /usr/local/Cellar/python@3.7/3.7.12_1/Frameworks/Python.framework/Versions/3.7/lib/libpython3.7m.dylib
 examples/SimpleDisplayImage/SimpleDisplayImage: /usr/local/lib/libpng.dylib
 examples/SimpleDisplayImage/SimpleDisplayImage: /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/lib/libz.tbd
 examples/SimpleDisplayImage/SimpleDisplayImage: /usr/local/lib/libjpeg.dylib

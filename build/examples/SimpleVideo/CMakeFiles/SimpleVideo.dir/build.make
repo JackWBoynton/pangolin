@@ -94,7 +94,7 @@ examples/SimpleVideo/SimpleVideo: examples/SimpleVideo/CMakeFiles/SimpleVideo.di
 examples/SimpleVideo/SimpleVideo: examples/SimpleVideo/CMakeFiles/SimpleVideo.dir/build.make
 examples/SimpleVideo/SimpleVideo: src/lib_pangolin.a
 examples/SimpleVideo/SimpleVideo: /usr/local/lib/libGLEW.dylib
-examples/SimpleVideo/SimpleVideo: /Library/Frameworks/Python.framework/Versions/3.9/lib/libpython3.9.dylib
+examples/SimpleVideo/SimpleVideo: /usr/local/Cellar/python@3.7/3.7.12_1/Frameworks/Python.framework/Versions/3.7/lib/libpython3.7m.dylib
 examples/SimpleVideo/SimpleVideo: /usr/local/lib/libpng.dylib
 examples/SimpleVideo/SimpleVideo: /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/lib/libz.tbd
 examples/SimpleVideo/SimpleVideo: /usr/local/lib/libjpeg.dylib

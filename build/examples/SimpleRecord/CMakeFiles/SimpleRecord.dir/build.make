@@ -94,7 +94,7 @@ examples/SimpleRecord/SimpleRecord: examples/SimpleRecord/CMakeFiles/SimpleRecor
 examples/SimpleRecord/SimpleRecord: examples/SimpleRecord/CMakeFiles/SimpleRecord.dir/build.make
 examples/SimpleRecord/SimpleRecord: src/lib_pangolin.a
 examples/SimpleRecord/SimpleRecord: /usr/local/lib/libGLEW.dylib
-examples/SimpleRecord/SimpleRecord: /Library/Frameworks/Python.framework/Versions/3.9/lib/libpython3.9.dylib
+examples/SimpleRecord/SimpleRecord: /usr/local/Cellar/python@3.7/3.7.12_1/Frameworks/Python.framework/Versions/3.7/lib/libpython3.7m.dylib
 examples/SimpleRecord/SimpleRecord: /usr/local/lib/libpng.dylib
 examples/SimpleRecord/SimpleRecord: /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/lib/libz.tbd
 examples/SimpleRecord/SimpleRecord: /usr/local/lib/libjpeg.dylib

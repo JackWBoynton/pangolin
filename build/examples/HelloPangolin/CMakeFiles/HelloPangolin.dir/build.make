@@ -94,7 +94,7 @@ examples/HelloPangolin/HelloPangolin: examples/HelloPangolin/CMakeFiles/HelloPan
 examples/HelloPangolin/HelloPangolin: examples/HelloPangolin/CMakeFiles/HelloPangolin.dir/build.make
 examples/HelloPangolin/HelloPangolin: src/lib_pangolin.a
 examples/HelloPangolin/HelloPangolin: /usr/local/lib/libGLEW.dylib
-examples/HelloPangolin/HelloPangolin: /Library/Frameworks/Python.framework/Versions/3.9/lib/libpython3.9.dylib
+examples/HelloPangolin/HelloPangolin: /usr/local/Cellar/python@3.7/3.7.12_1/Frameworks/Python.framework/Versions/3.7/lib/libpython3.7m.dylib
 examples/HelloPangolin/HelloPangolin: /usr/local/lib/libpng.dylib
 examples/HelloPangolin/HelloPangolin: /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/lib/libz.tbd
 examples/HelloPangolin/HelloPangolin: /usr/local/lib/libjpeg.dylib

@@ -48,7 +48,7 @@ add_library(_pangolin STATIC IMPORTED)
 set_property(TARGET _pangolin APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(_pangolin PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "C;CXX"
-  IMPORTED_LINK_INTERFACE_LIBRARIES_DEBUG "/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/OpenGL.framework;/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/OpenGL.framework;/usr/local/lib/libGLEW.dylib;-framework Cocoa;/Library/Frameworks/Python.framework/Versions/3.9/lib/libpython3.9.dylib;/usr/local/lib/libpng.dylib;/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/lib/libz.tbd;/usr/local/lib/libjpeg.dylib;/usr/local/lib/libtiff.dylib;/usr/local/lib/libzstd.dylib"
+  IMPORTED_LINK_INTERFACE_LIBRARIES_DEBUG "/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/OpenGL.framework;/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/OpenGL.framework;/usr/local/lib/libGLEW.dylib;-framework Cocoa;/usr/local/Cellar/python@3.7/3.7.12_1/Frameworks/Python.framework/Versions/3.7/lib/libpython3.7m.dylib;/usr/local/lib/libpng.dylib;/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/lib/libz.tbd;/usr/local/lib/libjpeg.dylib;/usr/local/lib/libtiff.dylib;/usr/local/lib/libzstd.dylib"
   IMPORTED_LOCATION_DEBUG "/Users/jackboynton/pangolin/build/src/lib_pangolin.a"
   )
 

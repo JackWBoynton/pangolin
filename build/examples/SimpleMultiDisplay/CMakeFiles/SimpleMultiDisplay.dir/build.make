@@ -94,7 +94,7 @@ examples/SimpleMultiDisplay/SimpleMultiDisplay: examples/SimpleMultiDisplay/CMak
 examples/SimpleMultiDisplay/SimpleMultiDisplay: examples/SimpleMultiDisplay/CMakeFiles/SimpleMultiDisplay.dir/build.make
 examples/SimpleMultiDisplay/SimpleMultiDisplay: src/lib_pangolin.a
 examples/SimpleMultiDisplay/SimpleMultiDisplay: /usr/local/lib/libGLEW.dylib
-examples/SimpleMultiDisplay/SimpleMultiDisplay: /Library/Frameworks/Python.framework/Versions/3.9/lib/libpython3.9.dylib
+examples/SimpleMultiDisplay/SimpleMultiDisplay: /usr/local/Cellar/python@3.7/3.7.12_1/Frameworks/Python.framework/Versions/3.7/lib/libpython3.7m.dylib
 examples/SimpleMultiDisplay/SimpleMultiDisplay: /usr/local/lib/libpng.dylib
 examples/SimpleMultiDisplay/SimpleMultiDisplay: /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/lib/libz.tbd
 examples/SimpleMultiDisplay/SimpleMultiDisplay: /usr/local/lib/libjpeg.dylib

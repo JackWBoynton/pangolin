@@ -94,7 +94,7 @@ examples/SimpleScene/SimpleScene: examples/SimpleScene/CMakeFiles/SimpleScene.di
 examples/SimpleScene/SimpleScene: examples/SimpleScene/CMakeFiles/SimpleScene.dir/build.make
 examples/SimpleScene/SimpleScene: src/lib_pangolin.a
 examples/SimpleScene/SimpleScene: /usr/local/lib/libGLEW.dylib
-examples/SimpleScene/SimpleScene: /Library/Frameworks/Python.framework/Versions/3.9/lib/libpython3.9.dylib
+examples/SimpleScene/SimpleScene: /usr/local/Cellar/python@3.7/3.7.12_1/Frameworks/Python.framework/Versions/3.7/lib/libpython3.7m.dylib
 examples/SimpleScene/SimpleScene: /usr/local/lib/libpng.dylib
 examples/SimpleScene/SimpleScene: /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/lib/libz.tbd
 examples/SimpleScene/SimpleScene: /usr/local/lib/libjpeg.dylib

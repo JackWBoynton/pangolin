@@ -94,7 +94,7 @@ examples/SimplePlot/SimplePlot: examples/SimplePlot/CMakeFiles/SimplePlot.dir/ma
 examples/SimplePlot/SimplePlot: examples/SimplePlot/CMakeFiles/SimplePlot.dir/build.make
 examples/SimplePlot/SimplePlot: src/lib_pangolin.a
 examples/SimplePlot/SimplePlot: /usr/local/lib/libGLEW.dylib
-examples/SimplePlot/SimplePlot: /Library/Frameworks/Python.framework/Versions/3.9/lib/libpython3.9.dylib
+examples/SimplePlot/SimplePlot: /usr/local/Cellar/python@3.7/3.7.12_1/Frameworks/Python.framework/Versions/3.7/lib/libpython3.7m.dylib
 examples/SimplePlot/SimplePlot: /usr/local/lib/libpng.dylib
 examples/SimplePlot/SimplePlot: /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/lib/libz.tbd
 examples/SimplePlot/SimplePlot: /usr/local/lib/libjpeg.dylib

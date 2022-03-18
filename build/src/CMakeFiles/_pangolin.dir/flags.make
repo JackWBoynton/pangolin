@@ -5,13 +5,13 @@
 # compile CXX with /Library/Developer/CommandLineTools/usr/bin/c++
 C_DEFINES = 
 
-C_INCLUDES = -I/Users/jackboynton/pangolin/include -I/Users/jackboynton/pangolin/build/src/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/System/Library/Frameworks -I/usr/local/include -I/usr/local/include/eigen3 -I/Library/Frameworks/Python.framework/Versions/3.9/include/python3.9 -I/Library/Frameworks/Mono.framework/Headers
+C_INCLUDES = -I/Users/jackboynton/pangolin/include -I/Users/jackboynton/pangolin/build/src/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/System/Library/Frameworks -I/usr/local/include -I/usr/local/include/eigen3 -I/usr/local/Cellar/python@3.7/3.7.12_1/Frameworks/Python.framework/Versions/3.7/include/python3.7m -I/Library/Frameworks/Mono.framework/Headers
 
 C_FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/jackboynton/pangolin/include -I/Users/jackboynton/pangolin/build/src/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/System/Library/Frameworks -I/usr/local/include -I/usr/local/include/eigen3 -I/Library/Frameworks/Python.framework/Versions/3.9/include/python3.9 -I/Library/Frameworks/Mono.framework/Headers
+CXX_INCLUDES = -I/Users/jackboynton/pangolin/include -I/Users/jackboynton/pangolin/build/src/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/System/Library/Frameworks -I/usr/local/include -I/usr/local/include/eigen3 -I/usr/local/Cellar/python@3.7/3.7.12_1/Frameworks/Python.framework/Versions/3.7/include/python3.7m -I/Library/Frameworks/Mono.framework/Headers
 
 CXX_FLAGS = -std=c++14 -Wall -Wextra  -stdlib=libc++ -fPIC -Wno-deprecated-register -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
 

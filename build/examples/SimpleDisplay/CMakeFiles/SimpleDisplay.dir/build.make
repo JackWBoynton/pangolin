@@ -94,7 +94,7 @@ examples/SimpleDisplay/SimpleDisplay: examples/SimpleDisplay/CMakeFiles/SimpleDi
 examples/SimpleDisplay/SimpleDisplay: examples/SimpleDisplay/CMakeFiles/SimpleDisplay.dir/build.make
 examples/SimpleDisplay/SimpleDisplay: src/lib_pangolin.a
 examples/SimpleDisplay/SimpleDisplay: /usr/local/lib/libGLEW.dylib
-examples/SimpleDisplay/SimpleDisplay: /Library/Frameworks/Python.framework/Versions/3.9/lib/libpython3.9.dylib
+examples/SimpleDisplay/SimpleDisplay: /usr/local/Cellar/python@3.7/3.7.12_1/Frameworks/Python.framework/Versions/3.7/lib/libpython3.7m.dylib
 examples/SimpleDisplay/SimpleDisplay: /usr/local/lib/libpng.dylib
 examples/SimpleDisplay/SimpleDisplay: /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/lib/libz.tbd
 examples/SimpleDisplay/SimpleDisplay: /usr/local/lib/libjpeg.dylib

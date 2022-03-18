@@ -94,7 +94,7 @@ examples/SharedMemoryCamera/SharedMemoryCamera: examples/SharedMemoryCamera/CMak
 examples/SharedMemoryCamera/SharedMemoryCamera: examples/SharedMemoryCamera/CMakeFiles/SharedMemoryCamera.dir/build.make
 examples/SharedMemoryCamera/SharedMemoryCamera: src/lib_pangolin.a
 examples/SharedMemoryCamera/SharedMemoryCamera: /usr/local/lib/libGLEW.dylib
-examples/SharedMemoryCamera/SharedMemoryCamera: /Library/Frameworks/Python.framework/Versions/3.9/lib/libpython3.9.dylib
+examples/SharedMemoryCamera/SharedMemoryCamera: /usr/local/Cellar/python@3.7/3.7.12_1/Frameworks/Python.framework/Versions/3.7/lib/libpython3.7m.dylib
 examples/SharedMemoryCamera/SharedMemoryCamera: /usr/local/lib/libpng.dylib
 examples/SharedMemoryCamera/SharedMemoryCamera: /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/lib/libz.tbd
 examples/SharedMemoryCamera/SharedMemoryCamera: /usr/local/lib/libjpeg.dylib

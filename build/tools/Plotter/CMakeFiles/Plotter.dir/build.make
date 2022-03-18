@@ -94,7 +94,7 @@ tools/Plotter/Plotter: tools/Plotter/CMakeFiles/Plotter.dir/main.cpp.o
 tools/Plotter/Plotter: tools/Plotter/CMakeFiles/Plotter.dir/build.make
 tools/Plotter/Plotter: src/lib_pangolin.a
 tools/Plotter/Plotter: /usr/local/lib/libGLEW.dylib
-tools/Plotter/Plotter: /Library/Frameworks/Python.framework/Versions/3.9/lib/libpython3.9.dylib
+tools/Plotter/Plotter: /usr/local/Cellar/python@3.7/3.7.12_1/Frameworks/Python.framework/Versions/3.7/lib/libpython3.7m.dylib
 tools/Plotter/Plotter: /usr/local/lib/libpng.dylib
 tools/Plotter/Plotter: /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/lib/libz.tbd
 tools/Plotter/Plotter: /usr/local/lib/libjpeg.dylib

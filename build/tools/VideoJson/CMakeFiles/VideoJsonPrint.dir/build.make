@@ -94,7 +94,7 @@ tools/VideoJson/VideoJsonPrint: tools/VideoJson/CMakeFiles/VideoJsonPrint.dir/ma
 tools/VideoJson/VideoJsonPrint: tools/VideoJson/CMakeFiles/VideoJsonPrint.dir/build.make
 tools/VideoJson/VideoJsonPrint: src/lib_pangolin.a
 tools/VideoJson/VideoJsonPrint: /usr/local/lib/libGLEW.dylib
-tools/VideoJson/VideoJsonPrint: /Library/Frameworks/Python.framework/Versions/3.9/lib/libpython3.9.dylib
+tools/VideoJson/VideoJsonPrint: /usr/local/Cellar/python@3.7/3.7.12_1/Frameworks/Python.framework/Versions/3.7/lib/libpython3.7m.dylib
 tools/VideoJson/VideoJsonPrint: /usr/local/lib/libpng.dylib
 tools/VideoJson/VideoJsonPrint: /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/lib/libz.tbd
 tools/VideoJson/VideoJsonPrint: /usr/local/lib/libjpeg.dylib

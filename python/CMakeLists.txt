@@ -11,4 +11,4 @@ include(pybind11Tools)
 
 pybind11_add_module( pangolin pangolin.cpp )
 SET_TARGET_PROPERTIES(pangolin PROPERTIES LIBRARY_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR})
-target_link_libraries( pangolin PRIVATE ${LIBRARY_NAME})
+target_link_libraries( pangolin PRIVATE ${LIBRARY_NAME} )

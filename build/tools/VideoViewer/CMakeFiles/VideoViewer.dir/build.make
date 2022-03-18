@@ -94,7 +94,7 @@ tools/VideoViewer/VideoViewer: tools/VideoViewer/CMakeFiles/VideoViewer.dir/main
 tools/VideoViewer/VideoViewer: tools/VideoViewer/CMakeFiles/VideoViewer.dir/build.make
 tools/VideoViewer/VideoViewer: src/lib_pangolin.a
 tools/VideoViewer/VideoViewer: /usr/local/lib/libGLEW.dylib
-tools/VideoViewer/VideoViewer: /Library/Frameworks/Python.framework/Versions/3.9/lib/libpython3.9.dylib
+tools/VideoViewer/VideoViewer: /usr/local/Cellar/python@3.7/3.7.12_1/Frameworks/Python.framework/Versions/3.7/lib/libpython3.7m.dylib
 tools/VideoViewer/VideoViewer: /usr/local/lib/libpng.dylib
 tools/VideoViewer/VideoViewer: /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/lib/libz.tbd
 tools/VideoViewer/VideoViewer: /usr/local/lib/libjpeg.dylib

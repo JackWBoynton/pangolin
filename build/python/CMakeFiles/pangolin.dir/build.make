@@ -94,7 +94,7 @@ pangolin_EXTERNAL_OBJECTS =
 ../pangolin.cpython-37m-darwin.so: python/CMakeFiles/pangolin.dir/build.make
 ../pangolin.cpython-37m-darwin.so: src/lib_pangolin.a
 ../pangolin.cpython-37m-darwin.so: /usr/local/lib/libGLEW.dylib
-../pangolin.cpython-37m-darwin.so: /Library/Frameworks/Python.framework/Versions/3.9/lib/libpython3.9.dylib
+../pangolin.cpython-37m-darwin.so: /usr/local/Cellar/python@3.7/3.7.12_1/Frameworks/Python.framework/Versions/3.7/lib/libpython3.7m.dylib
 ../pangolin.cpython-37m-darwin.so: /usr/local/lib/libpng.dylib
 ../pangolin.cpython-37m-darwin.so: /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/lib/libz.tbd
 ../pangolin.cpython-37m-darwin.so: /usr/local/lib/libjpeg.dylib

@@ -94,7 +94,7 @@ tools/VideoConvert/VideoConvert: tools/VideoConvert/CMakeFiles/VideoConvert.dir/
 tools/VideoConvert/VideoConvert: tools/VideoConvert/CMakeFiles/VideoConvert.dir/build.make
 tools/VideoConvert/VideoConvert: src/lib_pangolin.a
 tools/VideoConvert/VideoConvert: /usr/local/lib/libGLEW.dylib
-tools/VideoConvert/VideoConvert: /Library/Frameworks/Python.framework/Versions/3.9/lib/libpython3.9.dylib
+tools/VideoConvert/VideoConvert: /usr/local/Cellar/python@3.7/3.7.12_1/Frameworks/Python.framework/Versions/3.7/lib/libpython3.7m.dylib
 tools/VideoConvert/VideoConvert: /usr/local/lib/libpng.dylib
 tools/VideoConvert/VideoConvert: /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/lib/libz.tbd
 tools/VideoConvert/VideoConvert: /usr/local/lib/libjpeg.dylib

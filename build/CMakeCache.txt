@@ -44,17 +44,11 @@ BUILD_PANGOLIN_LIBPNG:BOOL=ON
 //Build support for LibRealSense video input
 BUILD_PANGOLIN_LIBREALSENSE:BOOL=ON
 
-//Build support for LibRealSense2 video input
-BUILD_PANGOLIN_LIBREALSENSE2:BOOL=ON
-
 //Build support for libtiff image input
 BUILD_PANGOLIN_LIBTIFF:BOOL=ON
 
 //Build support for libuvc video input
 BUILD_PANGOLIN_LIBUVC:BOOL=ON
-
-//Build support for liblz4 compression
-BUILD_PANGOLIN_LZ4:BOOL=ON
 
 //Build support for Oculus HUD
 BUILD_PANGOLIN_OCULUS:BOOL=OFF
@@ -91,9 +85,6 @@ BUILD_PANGOLIN_VIDEO:BOOL=ON
 
 //Build support for libzstd compression
 BUILD_PANGOLIN_ZSTD:BOOL=ON
-
-//Python wrapper for Pangolin
-BUILD_PYPANGOLIN_MODULE:BOOL=ON
 
 //Build Shared Library
 BUILD_SHARED_LIBS:BOOL=ON
@@ -171,59 +162,11 @@ CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 //Enable/Disable output of compile commands during generation.
 CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=
 
-//User executables (bin)
-CMAKE_INSTALL_BINDIR:PATH=bin
-
-//Read-only architecture-independent data (DATAROOTDIR)
-CMAKE_INSTALL_DATADIR:PATH=
-
-//Read-only architecture-independent data root (share)
-CMAKE_INSTALL_DATAROOTDIR:PATH=share
-
-//Documentation root (DATAROOTDIR/doc/PROJECT_NAME)
-CMAKE_INSTALL_DOCDIR:PATH=
-
-//C header files (include)
-CMAKE_INSTALL_INCLUDEDIR:PATH=include
-
-//Info documentation (DATAROOTDIR/info)
-CMAKE_INSTALL_INFODIR:PATH=
-
-//Object code libraries (lib)
-CMAKE_INSTALL_LIBDIR:PATH=lib
-
-//Program executables (libexec)
-CMAKE_INSTALL_LIBEXECDIR:PATH=libexec
-
-//Locale-dependent data (DATAROOTDIR/locale)
-CMAKE_INSTALL_LOCALEDIR:PATH=
-
-//Modifiable single-machine data (var)
-CMAKE_INSTALL_LOCALSTATEDIR:PATH=var
-
-//Man documentation (DATAROOTDIR/man)
-CMAKE_INSTALL_MANDIR:PATH=
-
 //Path to a program.
 CMAKE_INSTALL_NAME_TOOL:FILEPATH=/usr/bin/install_name_tool
 
-//C header files for non-gcc (/usr/include)
-CMAKE_INSTALL_OLDINCLUDEDIR:PATH=/usr/include
-
 //Install path prefix, prepended onto install directories.
 CMAKE_INSTALL_PREFIX:PATH=/usr/local
-
-//Run-time variable data (LOCALSTATEDIR/run)
-CMAKE_INSTALL_RUNSTATEDIR:PATH=
-
-//System admin executables (sbin)
-CMAKE_INSTALL_SBINDIR:PATH=sbin
-
-//Modifiable architecture-independent data (com)
-CMAKE_INSTALL_SHAREDSTATEDIR:PATH=com
-
-//Read-only single-machine data (etc)
-CMAKE_INSTALL_SYSCONFDIR:PATH=etc
 
 //Path to a program.
 CMAKE_LINKER:FILEPATH=/Library/Developer/CommandLineTools/usr/bin/ld
@@ -366,12 +309,6 @@ DC1394_INCLUDE_DIR:PATH=DC1394_INCLUDE_DIR-NOTFOUND
 //Path to a library.
 DC1394_LIBRARY:FILEPATH=DC1394_LIBRARY-NOTFOUND
 
-//Wayland Window Interface
-DISPLAY_WAYLAND:BOOL=OFF
-
-//X11 Window Interface
-DISPLAY_X11:BOOL=ON
-
 //Dot tool for use with Doxygen
 DOXYGEN_DOT_EXECUTABLE:FILEPATH=/usr/local/bin/dot
 
@@ -413,12 +350,6 @@ LIBREALSENSE_INCLUDE_DIR:PATH=LIBREALSENSE_INCLUDE_DIR-NOTFOUND
 
 //Path to a library.
 LIBREALSENSE_LIBRARY:FILEPATH=LIBREALSENSE_LIBRARY-NOTFOUND
-
-//The directory containing a CMake configuration file for LibRealSense2.
-LibRealSense2_DIR:PATH=LibRealSense2_DIR-NOTFOUND
-
-//The directory containing a CMake configuration file for Lz4.
-Lz4_DIR:PATH=Lz4_DIR-NOTFOUND
 
 //Include for OpenGL on OS X
 OPENGL_INCLUDE_DIR:PATH=/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/OpenGL.framework
@@ -505,23 +436,17 @@ PVVIRTUALDEVICE_LIBRARY:FILEPATH=PVVIRTUALDEVICE_LIBRARY-NOTFOUND
 // Defaults to C++14 mode.
 PYBIND11_CPP_STANDARD:STRING=-std=c++14
 
-//Install pybind11 header files?
-PYBIND11_INSTALL:BOOL=OFF
-
 //Python version to use for compiling modules
 PYBIND11_PYTHON_VERSION:STRING=
-
-//Build pybind11 test suite?
-PYBIND11_TEST:BOOL=OFF
 
 //Path to a program.
 PYTHON_EXECUTABLE:FILEPATH=/usr/local/opt/python@3.7/bin/python3.7
 
 //Path to a file.
-PYTHON_INCLUDE_DIR:PATH=/Library/Frameworks/Python.framework/Versions/3.9/include/python3.9
+PYTHON_INCLUDE_DIR:PATH=/usr/local/Cellar/python@3.7/3.7.12_1/Frameworks/Python.framework/Versions/3.7/include/python3.7m
 
 //Path to a library.
-PYTHON_LIBRARY:FILEPATH=/Library/Frameworks/Python.framework/Versions/3.9/lib/libpython3.9.dylib
+PYTHON_LIBRARY:FILEPATH=/usr/local/Cellar/python@3.7/3.7.12_1/Frameworks/Python.framework/Versions/3.7/lib/libpython3.7m.dylib
 
 //Path to a library.
 PYTHON_LIBRARY_DEBUG:FILEPATH=PYTHON_LIBRARY_DEBUG-NOTFOUND
@@ -559,10 +484,6 @@ TeliCam_INCLUDE_DIR:PATH=TeliCam_INCLUDE_DIR-NOTFOUND
 //Path to a file.
 TooN_INCLUDE_DIR:PATH=TooN_INCLUDE_DIR-NOTFOUND
 
-//Install pybind11 headers in Python include directory instead
-// of default installation prefix
-USE_PYTHON_INCLUDE_DIR:BOOL=OFF
-
 //Path to a file.
 ZLIB_INCLUDE_DIR:PATH=/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include
 
@@ -573,25 +494,13 @@ ZLIB_LIBRARY_DEBUG:FILEPATH=ZLIB_LIBRARY_DEBUG-NOTFOUND
 ZLIB_LIBRARY_RELEASE:FILEPATH=/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/lib/libz.tbd
 
 //Dependencies for the target
-_pangolin_LIB_DEPENDS:STATIC=general;/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/OpenGL.framework;general;/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/OpenGL.framework;general;/usr/local/lib/libGLEW.dylib;general;-framework Cocoa;general;/Library/Frameworks/Python.framework/Versions/3.9/lib/libpython3.9.dylib;general;/usr/local/lib/libpng.dylib;general;/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/lib/libz.tbd;general;/usr/local/lib/libjpeg.dylib;general;/usr/local/lib/libtiff.dylib;general;/usr/local/lib/libzstd.dylib;
+_pangolin_LIB_DEPENDS:STATIC=general;/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/OpenGL.framework;general;/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/OpenGL.framework;general;/usr/local/lib/libGLEW.dylib;general;-framework Cocoa;general;/usr/local/Cellar/python@3.7/3.7.12_1/Frameworks/Python.framework/Versions/3.7/lib/libpython3.7m.dylib;general;/usr/local/lib/libpng.dylib;general;/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/lib/libz.tbd;general;/usr/local/lib/libjpeg.dylib;general;/usr/local/lib/libtiff.dylib;general;/usr/local/lib/libzstd.dylib;
 
 //Dependencies for the target
 pangolin_LIB_DEPENDS:STATIC=general;-undefined dynamic_lookup;general;_pangolin;
 
-//Value Computed by CMake
-pybind11_BINARY_DIR:STATIC=/Users/jackboynton/pangolin/build/src/external/pybind11
-
 //The directory containing a CMake configuration file for pybind11.
 pybind11_DIR:PATH=pybind11_DIR-NOTFOUND
-
-//Value Computed by CMake
-pybind11_IS_TOP_LEVEL:STATIC=OFF
-
-//Value Computed by CMake
-pybind11_SOURCE_DIR:STATIC=/Users/jackboynton/pangolin/external/pybind11
-
-//Dependencies for the target
-pypangolin_LIB_DEPENDS:STATIC=general;-undefined dynamic_lookup;general;_pangolin;
 
 //Path to a file.
 uvc_INCLUDE_DIRS:PATH=uvc_INCLUDE_DIRS-NOTFOUND
@@ -685,40 +594,8 @@ CMAKE_GENERATOR_TOOLSET:INTERNAL=
 //Source directory with the top level CMakeLists.txt file for this
 // project
 CMAKE_HOME_DIRECTORY:INTERNAL=/Users/jackboynton/pangolin
-//ADVANCED property for variable: CMAKE_INSTALL_BINDIR
-CMAKE_INSTALL_BINDIR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_INSTALL_DATADIR
-CMAKE_INSTALL_DATADIR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_INSTALL_DATAROOTDIR
-CMAKE_INSTALL_DATAROOTDIR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_INSTALL_DOCDIR
-CMAKE_INSTALL_DOCDIR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_INSTALL_INCLUDEDIR
-CMAKE_INSTALL_INCLUDEDIR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_INSTALL_INFODIR
-CMAKE_INSTALL_INFODIR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_INSTALL_LIBDIR
-CMAKE_INSTALL_LIBDIR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_INSTALL_LIBEXECDIR
-CMAKE_INSTALL_LIBEXECDIR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_INSTALL_LOCALEDIR
-CMAKE_INSTALL_LOCALEDIR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_INSTALL_LOCALSTATEDIR
-CMAKE_INSTALL_LOCALSTATEDIR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_INSTALL_MANDIR
-CMAKE_INSTALL_MANDIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_INSTALL_NAME_TOOL
 CMAKE_INSTALL_NAME_TOOL-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_INSTALL_OLDINCLUDEDIR
-CMAKE_INSTALL_OLDINCLUDEDIR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_INSTALL_RUNSTATEDIR
-CMAKE_INSTALL_RUNSTATEDIR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_INSTALL_SBINDIR
-CMAKE_INSTALL_SBINDIR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_INSTALL_SHAREDSTATEDIR
-CMAKE_INSTALL_SHAREDSTATEDIR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_INSTALL_SYSCONFDIR
-CMAKE_INSTALL_SYSCONFDIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_LINKER
 CMAKE_LINKER-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_MAKE_PROGRAM
@@ -799,10 +676,8 @@ DOXYGEN_EXECUTABLE-ADVANCED:INTERNAL=1
 EIGEN_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //Details about finding Doxygen
 FIND_PACKAGE_MESSAGE_DETAILS_Doxygen:INTERNAL=[/usr/local/bin/doxygen][cfound components: doxygen dot ][v1.8.15()]
-//Details about finding OpenGL
-FIND_PACKAGE_MESSAGE_DETAILS_OpenGL:INTERNAL=[/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/OpenGL.framework][/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/OpenGL.framework][c ][v()]
 //Details about finding PYTHON
-FIND_PACKAGE_MESSAGE_DETAILS_PYTHON:INTERNAL=/usr/local/opt/python@3.7/bin/python3.7
+FIND_PACKAGE_MESSAGE_DETAILS_PYTHON:INTERNAL=/usr/local/opt/python@3.7/bin/python3.73.7.12
 //Details about finding PkgConfig
 FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig:INTERNAL=[/usr/local/bin/pkg-config][v0.29.2()]
 //Details about finding PythonInterp
@@ -874,17 +749,14 @@ PNG_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
 PNG_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PNG_PNG_INCLUDE_DIR
 PNG_PNG_INCLUDE_DIR-ADVANCED:INTERNAL=1
-PYBIND11_INCLUDE_DIR:INTERNAL=/Users/jackboynton/pangolin/external/pybind11/include
 PYBIND11_LTO_CXX_FLAGS:INTERNAL=-flto
 PYBIND11_LTO_LINKER_FLAGS:INTERNAL=-flto
-PYBIND11_VERSION_MAJOR:INTERNAL=2
-PYBIND11_VERSION_MINOR:INTERNAL=2
-PYBIND11_VERSION_PATCH:INTERNAL=1
 //ADVANCED property for variable: PYTHON_EXECUTABLE
 PYTHON_EXECUTABLE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PYTHON_INCLUDE_DIR
 PYTHON_INCLUDE_DIR-ADVANCED:INTERNAL=1
 PYTHON_INCLUDE_DIRS:INTERNAL=/usr/local/Cellar/python@3.7/3.7.12_1/Frameworks/Python.framework/Versions/3.7/include/python3.7m
+PYTHON_IS_DEBUG:INTERNAL=0
 PYTHON_LIBRARIES:INTERNAL=/Library/Frameworks/Python.framework/Versions/3.9/lib/libpython3.9.dylib
 //ADVANCED property for variable: PYTHON_LIBRARY
 PYTHON_LIBRARY-ADVANCED:INTERNAL=1
@@ -892,6 +764,10 @@ PYTHON_LIBRARY-ADVANCED:INTERNAL=1
 PYTHON_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
 PYTHON_MODULE_EXTENSION:INTERNAL=.cpython-37m-darwin.so
 PYTHON_MODULE_PREFIX:INTERNAL=
+PYTHON_VERSION:INTERNAL=3.7.12
+PYTHON_VERSION_MAJOR:INTERNAL=3
+PYTHON_VERSION_MINOR:INTERNAL=7
+Python_ADDITIONAL_VERSIONS:INTERNAL=3.11;3.10;3.9;3.8;3.7;3.6
 //ADVANCED property for variable: TIFF_INCLUDE_DIR
 TIFF_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: TIFF_LIBRARY_DEBUG
@@ -904,7 +780,8 @@ ZLIB_INCLUDE_DIR-ADVANCED:INTERNAL=1
 ZLIB_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: ZLIB_LIBRARY_RELEASE
 ZLIB_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
-//CMAKE_INSTALL_PREFIX during last run
-_GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=/usr/local
+_Python:INTERNAL=PYTHON
 __pkg_config_checked_PC_OPENNI:INTERNAL=1
+//Directories where pybind11 and possibly Python headers are located
+pybind11_INCLUDE_DIRS:INTERNAL=;/usr/local/Cellar/python@3.7/3.7.12_1/Frameworks/Python.framework/Versions/3.7/include/python3.7m
 

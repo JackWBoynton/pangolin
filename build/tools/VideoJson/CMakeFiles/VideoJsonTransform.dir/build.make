@@ -94,7 +94,7 @@ tools/VideoJson/VideoJsonTransform: tools/VideoJson/CMakeFiles/VideoJsonTransfor
 tools/VideoJson/VideoJsonTransform: tools/VideoJson/CMakeFiles/VideoJsonTransform.dir/build.make
 tools/VideoJson/VideoJsonTransform: src/lib_pangolin.a
 tools/VideoJson/VideoJsonTransform: /usr/local/lib/libGLEW.dylib
-tools/VideoJson/VideoJsonTransform: /Library/Frameworks/Python.framework/Versions/3.9/lib/libpython3.9.dylib
+tools/VideoJson/VideoJsonTransform: /usr/local/Cellar/python@3.7/3.7.12_1/Frameworks/Python.framework/Versions/3.7/lib/libpython3.7m.dylib
 tools/VideoJson/VideoJsonTransform: /usr/local/lib/libpng.dylib
 tools/VideoJson/VideoJsonTransform: /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/lib/libz.tbd
 tools/VideoJson/VideoJsonTransform: /usr/local/lib/libjpeg.dylib
